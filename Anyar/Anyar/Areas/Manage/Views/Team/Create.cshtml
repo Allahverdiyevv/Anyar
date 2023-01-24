@@ -1,0 +1,61 @@
+﻿@model Team 
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="row">
+
+       <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" aria-describedby="Name">
+
+       </div>
+       <div class="mb-3 col-md-3">
+        <label asp-for="Profession" class="form-label">Profession</label>
+        <input asp-for="Profession" class="form-control" aria-describedby="Profession">
+
+        </div>
+         <div class="mb-3 col-md-3">
+         <label asp-for="Desc" class="form-label">Desc</label>
+         <input asp-for="Desc" class="form-control" aria-describedby="Desc">
+
+       </div>
+    
+       <div>
+               <div class="mb-3 col-md-3">
+                <label asp-for="TiwiterUrl" class="form-label">TiwiterUrl</label>
+                <input asp-for="TiwiterUrl" class="form-control" aria-describedby="TiwiterUrl">
+
+       </div>
+            
+            <div class="mb-3 col-md-3">
+                <label asp-for="FacebookUrl" class="form-label">FacebookUrl</label>
+                <input asp-for="FacebookUrl" class="form-control" aria-describedby="FacebookUrl">
+
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="InstagramUrl" class="form-label">InstagramUrl</label>
+                <input asp-for="InstagramUrl" class="form-control" aria-describedby="InstagramUrl">
+
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="LinkedinUrl" class="form-label">LinkedinUrl</label>
+                <input asp-for="LinkedinUrl" class="form-control" aria-describedby="LinkedinUrl">
+
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="ImageFile" class="form-label">ImageFile</label>
+                <input asp-for="ImageFile" class="form-control" aria-describedby="ImageFile">
+
+            </div>
+       </div>
+
+    </div>
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
